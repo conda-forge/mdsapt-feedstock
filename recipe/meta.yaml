@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/calpolyccg/MDSAPT/archive/v{{ version }}.tar.gz
-  sha256: 8d5892f8205a1eb63b6a8f336e75bc79b4948f23a1ae98db6f4986b3f1ce9c71
+  sha256: 4d7b2978795f142a2a1be9bdf5de8c6ab5dec88bafbe70786b09d658cbb39f6c
 
 build:
   noarch: python
