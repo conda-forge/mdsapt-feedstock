@@ -1,5 +1,5 @@
 {% set name = "mdsapt" %}
-{% set version = "2.0.3" %}
+{% set version = "2.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/calpolyccg/MDSAPT/archive/v{{ version }}.tar.gz
-  sha256: 4d7b2978795f142a2a1be9bdf5de8c6ab5dec88bafbe70786b09d658cbb39f6c
+  sha256: c6d07f2894be8a05e7355a765293ea6aab394f34d65dfa8f7745ad426218eb2a
 
 build:
   noarch: python
@@ -56,5 +56,5 @@ about:
 
 extra:
   recipe-maintainers:
-   - ALescoulie
-   - ifd3f
+    - ALescoulie
+    - ifd3f
