@@ -12,16 +12,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
   entry_points:
     - mdsapt = mdsapt.cli:cli
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - psi4 =>1.9.1
     - mdanalysis >=2.7.0
     - rdkit >=2023.09.5
@@ -41,6 +41,7 @@ test:
     - pytest
     - nglview
     - notebook
+    - python {{ python_min }}
   commands:
     - pip check
     - pytest -p no:warnings -vvv mdsapt
