@@ -25,7 +25,7 @@ requirements:
     - python >=3.9
     - psi4 =>1.9.1
     - mdanalysis >=2.9.0
-    - rdkit >=2025.03.1
+    - rdkit >=2023.9.6
     - openmm >=8.2.0
     - pdbfixer >=1.11
     - numpy
@@ -39,9 +39,15 @@ test:
     - mdsapt
   requires:
     - pip
-    - pytest
+    - pytest >=8.2.2
     - nglview
     - notebook
+    - autopep8
+    - pylint
+    - pyright
+    - pytest-cov
+    - sphinx
+    - sphinx-rtd-theme
   commands:
     - pip check
     - pytest -p no:warnings -vvv mdsapt
