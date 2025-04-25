@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/calpolyccg/MDSAPT/archive/v{{ version }}.tar.gz
-  sha256: ca1a67402973dbde3cb8fa35f1c1fa3aacc74beefb329b8af9653caea9ef4593
+  sha256: 57fd6b5d0dfbd1c8253df78f2395837e080af15eb3c192fe195e2eb1f0603457
 
 build:
   noarch: python
@@ -20,13 +20,14 @@ requirements:
   host:
     - python >=3.9
     - pip
+    - setuptools
   run:
     - python >=3.9
     - psi4 =>1.9.1
-    - mdanalysis >=2.7.0
-    - rdkit >=2023.09.5
-    - openmm >=8.1.1
-    - pdbfixer >=1.9
+    - mdanalysis >=2.9.0
+    - rdkit >=2025.03.1
+    - openmm >=8.2.0
+    - pdbfixer >=1.11
     - numpy
     - click
     - pandas
