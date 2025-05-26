@@ -1,5 +1,5 @@
 {% set name = "mdsapt" %}
-{% set version = "2.0.5" %}
+{% set version = "2.0.6_rc1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/calpolyccg/MDSAPT/archive/v{{ version }}.tar.gz
-  sha256: 57fd6b5d0dfbd1c8253df78f2395837e080af15eb3c192fe195e2eb1f0603457
+  sha256: 6c651eed867412316ed23edd7ff33c020556c9ab1c73e49f3032360b42c52d20
 
 build:
   noarch: python
@@ -39,13 +39,13 @@ test:
     - mdsapt
   requires:
     - pip
-    - pytest >=8.2.2
+    - pytest
     - nglview
     - notebook
     - autopep8
     - pylint
     - pyright
-    - pytest-cov
+    - pytest-cov <6,>=5
     - sphinx
     - sphinx-rtd-theme
   commands:
