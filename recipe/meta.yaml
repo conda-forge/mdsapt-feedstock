@@ -1,5 +1,5 @@
 {% set name = "mdsapt" %}
-{% set version = "2.0.6_rc1" %}
+{% set version = "2.0.6" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/calpolyccg/MDSAPT/archive/v{{ version }}.tar.gz
-  sha256: 6c651eed867412316ed23edd7ff33c020556c9ab1c73e49f3032360b42c52d20
+  sha256: 7bd2f3a2974a42084685161837a14dedc0dd661d6531d09ec2003952ea3568a8
 
 build:
   noarch: python
