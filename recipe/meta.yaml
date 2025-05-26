@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python {{ python_min }}
     - pip
     - poetry
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - psi4 =>1.9.1
     - mdanalysis >=2.9.0
     - rdkit >=2023.9.6
@@ -38,6 +38,7 @@ test:
   source_files:
     - mdsapt
   requires:
+    - python {{ python_min }}
     - pip
     - pytest
     - nglview
